@@ -19,3 +19,6 @@ Example:
 Note:
   Your solution will be nicer without loops.
 */
+
+
+// Solution
