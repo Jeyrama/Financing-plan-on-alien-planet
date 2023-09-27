@@ -26,3 +26,19 @@ Note:
 const finance = (n) => n * (n + 1) * (n + 2) / 2;
 
 // or
+
+function finance(n) {
+  let total = 0;
+  let weekArray = [];
+  for (let week = 0; week <= n; week++) {
+    weekArray.push(week)
+  }
+  weekArray.map((week) => {
+    for (let day = 0; day <= n; day++) {
+      if (week <= day) {
+        total = total + week + day
+      }
+    }
+  })
+  return total
+}
